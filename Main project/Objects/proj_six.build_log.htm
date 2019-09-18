@@ -1,0 +1,121 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Vasily Rakc, BMSTU, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.26.2.0
+Toolchain Path:  D:\Program Files D\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+D:\Documents\Keil\IPC Tehnopolis\Project 6\proj_six.uvprojx
+Project File Date:  07/29/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Program Files D\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling pwm_setup.c...
+pwm_setup.h(21): warning:  #1295-D: Deprecated declaration pwm_setup - give arg types
+  void pwm_setup();
+pwm_setup.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+pwm_setup.c(40): warning:  #1-D: last line of file ends without a newline
+  	
+pwm_setup.c: 3 warnings, 0 errors
+compiling clock_init_module.c...
+compiling main.c...
+systick_delay_init.h(18): warning:  #1295-D: Deprecated declaration systick_delay_init - give arg types
+  void systick_delay_init();
+systick_delay_init.h(24): warning:  #1295-D: Deprecated declaration delayed_activated - give arg types
+  bool delayed_activated();
+systick_delay_init.h(40): warning:  #1295-D: Deprecated declaration send_sig_gpio_init - give arg types
+  void send_sig_gpio_init();
+systick_delay_init.h(43): warning:  #1-D: last line of file ends without a newline
+  #endif
+interrupt_timers_setting.h(7): warning:  #1295-D: Deprecated declaration tim3_interrupt_input_init - give arg types
+  void tim3_interrupt_input_init();
+interrupt_timers_setting.h(9): warning:  #1295-D: Deprecated declaration tim2_interrupt_counter_init - give arg types
+  void tim2_interrupt_counter_init();
+interrupt_timers_setting.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+pwm_setup.h(21): warning:  #1295-D: Deprecated declaration pwm_setup - give arg types
+  void pwm_setup();
+pwm_setup.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.c(191): warning:  #1-D: last line of file ends without a newline
+  }
+main.c: 10 warnings, 0 errors
+assembling startup_stm32f10x_md.s...
+compiling systick_delay_init.c...
+systick_delay_init.h(18): warning:  #1295-D: Deprecated declaration systick_delay_init - give arg types
+  void systick_delay_init();
+systick_delay_init.h(24): warning:  #1295-D: Deprecated declaration delayed_activated - give arg types
+  bool delayed_activated();
+systick_delay_init.h(40): warning:  #1295-D: Deprecated declaration send_sig_gpio_init - give arg types
+  void send_sig_gpio_init();
+systick_delay_init.h(43): warning:  #1-D: last line of file ends without a newline
+  #endif
+systick_delay_init.c(143): warning:  #1-D: last line of file ends without a newline
+  }
+systick_delay_init.c: 5 warnings, 0 errors
+compiling interrupt_timers_setting.c...
+interrupt_timers_setting.h(7): warning:  #1295-D: Deprecated declaration tim3_interrupt_input_init - give arg types
+  void tim3_interrupt_input_init();
+interrupt_timers_setting.h(9): warning:  #1295-D: Deprecated declaration tim2_interrupt_counter_init - give arg types
+  void tim2_interrupt_counter_init();
+interrupt_timers_setting.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+interrupt_timers_setting.c(69): warning:  #1-D: last line of file ends without a newline
+  //}
+interrupt_timers_setting.c: 4 warnings, 0 errors
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=6112 RO-data=268 RW-data=76 ZI-data=1796  
+".\Objects\proj_six.axf" - 0 Error(s), 22 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F103C8
+  .\RTE\_Target_1
+  D:\Program Files D\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  D:\Program Files D\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Source file:   Device\Source\system_stm32f10x.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
